@@ -75,7 +75,7 @@ The API will start and listen on port 8090
 ### 6. Test the API
 You can now test the API by making a GET request to:
 
-``bash
+```bash
 http://localhost:8090/current-time
 ```
 This will return the current time in Toronto in JSON format,
