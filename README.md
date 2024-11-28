@@ -13,7 +13,8 @@ This project implements a simple API in Go that returns the current time in Toro
 
 To run this project, you will need:
 
-- **Go** (Golang) installed: [Install Go](https://golang.org/doc/install)
+- **Go** 
+- **MySQL** 
 
 
 ## Setup and Installation
