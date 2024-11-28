@@ -62,3 +62,23 @@ cd Week13
    - This will create a table with two columns:
      - `id`: An auto-incrementing integer to serve as the primary key.
      - `timestamp`: A `DATETIME` field that stores the timestamp of each logged request.
+
+### 5. Run the Application
+
+To start the Go application, run the following command:
+
+```bash
+go run main.go
+```
+The API will start and listen on port 8090
+
+### 6. Test the API
+You can now test the API by making a GET request to:
+
+``bash
+http://localhost:8090/current-time
+```
+This will return the current time in Toronto in JSON format,
+Each request will also log the current time into the time_log table in MySQL.
+
+![image](https://github.com/user-attachments/assets/382ee830-6237-4bed-8599-0642f8bb2c3a)
