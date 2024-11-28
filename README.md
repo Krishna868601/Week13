@@ -14,10 +14,7 @@ This project implements a simple API in Go that returns the current time in Toro
 To run this project, you will need:
 
 - **Go** (Golang) installed: [Install Go](https://golang.org/doc/install)
-- **MySQL** installed (locally or using Docker): [Install MySQL](https://dev.mysql.com/doc/refman/8.0/en/installing.html)
 
-### For MySQL with Docker (optional):
-- Docker installed: [Install Docker](https://docs.docker.com/get-docker/)
 
 ## Setup and Installation
 
@@ -25,3 +22,43 @@ To run this project, you will need:
 ```bash
 git remote add origin https://github.com/Krishna868601/Week13.git
 cd Week13
+```
+### 2. Set up MySQL Database
+
+#### a. Using MySQL locally:
+
+1. **Install MySQL**: 
+   - Download and install MySQL from [here](https://dev.mysql.com/doc/refman/8.0/en/installing.html).
+   - Start the MySQL service on your machine.
+
+2. **Connect to MySQL**:
+   - Open **MySQL Workbench** or open a command line terminal (e.g., Command Prompt or PowerShell).
+   - Use the following command to connect to MySQL as the root user:
+
+     ```bash
+     mysql -u root -p
+     ```
+
+   - Enter your MySQL root password when prompted.
+
+3. **Create a new database**:
+   - After successfully logging in, create a new database named `toronto_time`:
+
+     ```sql
+     CREATE DATABASE toronto_time;
+     USE toronto_time;
+     ```
+
+4. **Create the `time_log` table**:
+   - Create a table named `time_log` that will store the timestamp of each API request:
+
+     ```sql
+     CREATE TABLE IF NOT EXISTS time_log (
+         id INT AUTO_INCREMENT PRIMARY KEY,
+         timestamp DATETIME NOT NULL
+     );
+     ```
+
+   - This will create a table with two columns:
+     - `id`: An auto-incrementing integer to serve as the primary key.
+     - `timestamp`: A `DATETIME` field that stores the timestamp of each logged request.
