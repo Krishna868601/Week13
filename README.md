@@ -82,3 +82,7 @@ This will return the current time in Toronto in JSON format,
 Each request will also log the current time into the time_log table in MySQL.
 
 ![image](https://github.com/user-attachments/assets/382ee830-6237-4bed-8599-0642f8bb2c3a)
+
+Database Query Output:
+![image](https://github.com/user-attachments/assets/626b360c-589a-4564-a49c-e1fd65c34cbb)
+
