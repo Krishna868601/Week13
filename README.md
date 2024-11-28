@@ -23,5 +23,5 @@ To run this project, you will need:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/toronto-time-api.git
-cd toronto-time-api
+git remote add origin https://github.com/Krishna868601/Week13.git
+cd Week13
